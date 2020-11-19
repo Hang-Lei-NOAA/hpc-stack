@@ -74,7 +74,7 @@ esmf:
   debug: NO
 
 fms:
-  build: YES
+  build: NO
   version: master
   repo: noaa-gfdl
   cmake_opts: "-DGFS_PHYS=ON -DLARGEFILE=ON"
@@ -149,7 +149,7 @@ g2:
 
 g2c:
   build: YES
-  version: develop
+  version: v1.6.2
   install_as: 1.6.2
 
 g2tmpl:
@@ -194,8 +194,8 @@ prod_util:
 
 grib_util:
   build: YES
-  version: v1.2.1
-  install_as: 1.2.1
+  version: v1.2.2
+  install_as: 1.2.2
   openmp: ON
 
 boost:
@@ -208,7 +208,7 @@ eigen:
   version: 3.3.7
 
 gsl_lite:
-  build: YES
+  build: NO
   version: 0.37.0
 
 gptl:
@@ -216,7 +216,7 @@ gptl:
   version: 8.0.2
 
 fftw:
-  build: YES
+  build: NO
   version: 3.3.8
 
 tau2:

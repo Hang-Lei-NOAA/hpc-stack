@@ -199,8 +199,8 @@ prod_util:
 
 grib_util:
   build: YES
-  version: v1.2.1
-  install_as: 1.2.1
+  version: v1.2.2
+  install_as: 1.2.2
   openmp: ON
 
 boost:
@@ -231,6 +231,14 @@ tau2:
 cgal:
   build: NO
   version: 5.0.2
+
+json:
+  build: YES
+  version: 3.9.1
+
+json_schema_validator:
+  build: YES
+  version: 2.1.0
 
 ecbuild:
   build: YES
