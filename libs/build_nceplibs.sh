@@ -45,7 +45,6 @@ if $MODULES; then
       module try-load jasper
       module try-load zlib
       module try-load png
-      module try-load jpeg
       module load netcdf
      fi
       #module load sp  # building with USE_SPECTRAL=OFF
@@ -211,7 +210,7 @@ cd ${HPC_STACK_ROOT}/${PKGDIR:-"pkg"}
 software=$name-$version
 #[[ -d $software ]] || ( git clone --recursive -b $version $gitURL $software )
 if [[ ! -d $software ]]; then
-  git clone $gitURL $software
+  git clone --recursive $gitURL $software
   cd $software
   git checkout $version
   git submodule update --init --recursive
