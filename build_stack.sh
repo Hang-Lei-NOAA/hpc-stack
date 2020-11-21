@@ -172,6 +172,7 @@ build_nceplib g2
 build_nceplib g2c
 build_nceplib g2tmpl
 build_nceplib crtm
+build_nceplib nceppost
 build_nceplib upp
 build_nceplib wrf_io
 build_nceplib bufr
